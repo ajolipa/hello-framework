@@ -29,7 +29,8 @@ export async function load() {
   }
 }
 
+// Run the function to load data
 const plays = await load();
 
-// Run the function for manual testing
+// Write the processed data to a JSON file that can be imported into markdown files
 process.stdout.write(JSON.stringify(plays));
